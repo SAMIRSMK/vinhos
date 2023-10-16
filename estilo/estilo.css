@@ -119,12 +119,16 @@ div#img06 {
     background-position: center;
 } 
 div#img07 {
-    background-image: url(../imagem/Imagem\ do\ WhatsApp\ de\ 2023-10-13\ à\(s\)\ 16.45.05_775445fb.jpg);
+    background-image: url(../imagem/120ANOS.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 400px;
-    height: 300px;
+} 
+div#img08 {
+    background-image: url(../imagem/But.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 } 
 .parageafo {
     border: 2px solid black;
