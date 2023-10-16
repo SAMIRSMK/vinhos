@@ -61,7 +61,7 @@ main {
 }
 
 section {
-    height: 60vh;
+    height: 370px;
     margin: 10px;
     padding: 10px;
     border: 2px solid black;
@@ -124,7 +124,7 @@ div#img07 {
     background-size: contain;
     background-position: center;
     width: 400px;
-    height: 350px;
+    height: 300px;
 } 
 .parageafo {
     border: 2px solid black;
