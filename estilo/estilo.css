@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2? family= Pacifico & display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 :root {
     --font-01:'Pacífico', sans-serif;
@@ -16,9 +16,11 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Courgette', cursive;
 }
 body {
-    background-image: linear-gradient(to bottom, whitesmoke, rgb( 13, 128, 191)); 
+    background-image:linear-gradient(to bottom, rgb( 13, 128, 191), rgb(9, 85, 126));
+    
 }
 header {
     margin: auto;
@@ -35,6 +37,7 @@ nav {
     background-color: var(--cor-01);
     padding: 20px;
     text-align: center;
+    margin: 0px 0px -10px 0px;
     box-shadow: -2px 2px 7px  rgba(0, 0, 0, 0.811);
 }
 nav a {
@@ -48,47 +51,120 @@ nav a:hover {
 nav img {
     width: 15px;
 }
+
 main {
-    background-color: white;
-    max-width: 750px;
+    max-width: 800px;
     margin: auto;
-    box-shadow: -2px 2px 7px  rgba(0, 0, 0, 0.811);
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 7px;
+    background-color: white;
+
 }
-main img {
-   display: block;
-   width: 300px;
-   height: auto;
-   padding: 50px 20px 0px 20px;
-   margin: auto;
-   border: 1px solid black;
-}
-dt#m {
-    margin-top: 0px;
-}
-main dt {
-    margin-top: 90px;
-}
-main dd {
-    text-align: center;
-    font-family: var(--font-02);
-    font-size: 1.4em;
-    font-weight: normal;
-    font-style: italic;
-}
-footer {
-    background-color: black;
-    color: whitesmoke;
-    font-family: var(--font-02);
-    text-align: center;
+
+section {
+    height: 65vh;
+    margin: 10px;
     padding: 10px;
+    border: 2px solid black;
     
 }
-a::after {
-    content: ' [link]';
-    color: rgba(245, 245, 245, 0.637);
-    font-size: 0.7em;
+div {
+    position: relative;
+    margin: auto;
+    width: 200px;
+    height: 90%;
+
+}
+ 
+div.vinhos {
+    width: 200px; 
+    height: 350px;
+    position: relative; 
+}
+div#img01 {
+    background: url(../imagem/DEZA0.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+} 
+div#img02 {
+    background-image: url(../imagem/TRI.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+} 
+div#img03 {
+    background-image: url(../imagem/OLIMPICO.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+} 
+div#img04 {
+    background-image: url(../imagem/1903ANOSn.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+} 
+div#img05 {
+    background-image: url(../imagem/40ANOSn.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+} 
+div#img06 {
+    background-image: url(../imagem/SUAREZ.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+} 
+div#img07 {
+    background-image: url(../imagem/120Anos.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 400px;
+    height: 350px;
+} 
+.parageafo {
+    border: 2px solid black;
+    text-align: center;
+}
+li {
+    border: 1px solid black;
+    width: 150px;
+}
+ul {
+    list-style: none;
+    line-height: 1.5em;
+}
+ul.lista {
+    position: absolute;
+    left: 1; 
+    width: 50%; 
+    list-style-type: none;
+    padding: 0px;
+}
+li.nivel1 {
+    color: #93754f;
+    font-weight: 100;
+    font-size: 0.9em;;
+}
+li.nivel2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.vinhos img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
 }
 
-
-
+footer {
+    margin-top: -10px;
+    text-align: justify;
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
