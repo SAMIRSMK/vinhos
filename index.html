@@ -3,295 +3,421 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adega Do Grêmio</title>
-    <link rel="stylesheet" href="estilo/estilo.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Adega do Grêmio</title>
     <link
       rel="shortcut icon"
       href="imagem/Adegadogrêmi.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="estilo/responsivo.css" />
+    <link rel="stylesheet" href="estilo/estilo.css" /> 
   </head>
   <body>
-    <header>
-      <img src="imagem/Aegadogremioblack.jpg" alt="" />
-    </header>
-    <nav>
-      <a
-        class="link"
-        href="https://instagram.com/adegadogremio?igshid=MzRlODBiNWFlZA== "
-        target="_blank"
-      >
-        <img src="imagem/free-instagram-1868978-1583142.webp" /><br />Adega do
-        Grêmio</a
-      >
-    </nav>
-
-    <main>
-      <section>
-        <ul class="lista">
-          <li class="nivel1">Nome do Vinho:</li>
-          <ul>
-            <li class="nivel2">Espumantebe Brut</li>
-          </ul>
-          <li class="nivel1">Uva:</li>
-          <ul>
-            <li class="nivel2">Chardonnay e Pinot Noir</li>
-          </ul>
-          <li class="nivel1">Região:</li>
-          <ul>
-            <li class="nivel2">serra Gaúcha</li>
-          </ul>
-          <li class="nivel1">Graduação Alcoólica:</li>
-          <ul>
-            <li class="nivel2">12,5%</li>
-          </ul>
-          <li class="nivel1">Preço</li>
-          <ul>
-            <li class="nivel2">R$ 50,00</li>
-          </ul>
+    <div class="estrutura">
+      <header class="header">
+          <img
+            src="imagem/Aegadogremioblack.jpg"
+            alt="logo da Adega do Grêmio"
+          />
+        <menu class="menu">
+          <a href="#sobre">Sobre Nos</a>
+          <a href="https://wa.me/5554981040529?text=Ola%21">whatsapp</a>
+          <a href="https://instagram.com/adegadogremio?igshid=Yjc0OGI0MDc4OA==">instagram</a>
+        </menu>
+      </header>
+      <nav class="navbar">
+        <img src="imagem/garrafa-de-vinho.png" alt="garrafas de vinho" />
+        <ul>
+          <li><a href="#brut">Espumantebe Brut</a></li>
+          <li><a href="#dez">Dez a Zero</a></li>
+          <li><a href="#tri">Tri Invicto</a></li>
+          <li><a href="#olimpico">Olimpico Monumental</a></li>
+          <li><a href="#1903">1903</a></li>
+          <li><a href="#v40">40Anos Libertadores</a></li>
+          <li><a href="#suarez">Suarez</a></li>
+          <li><a href="#v120">120 Anos</a></li>
+          <li><a href="#tBrut">Taça Brut</a></li>
+          <li><a href="#tvinho">Taça Vinho</a></li>
         </ul>
-        <div class="vinhos background" id="img08"></div>
-      </section>
+      </nav>
+      <main>
+        <section class="produtos">
+          <div id="suarez" class="item ">
+            <img src="imagem/vinho-suarez.jpg" alt="vinho Suarez " />
+            <div class="descricao-v">
+              <p>vinho Suarez, Uva Tannat, Safra 2021</p>
+              <span>R$ 65,00</span>
+              <button>Ver Mais</button>
+            </div>
+            <div class="descricao-i">
+              <img  src="imagem/garrafa-de-vinho.png" alt="garrafa de vinho">
+              <ul>
+                <li>Nome do Vinho:</li>
+                <ul>
+                  <li>Suarez</li>
+                </ul>
+                <li>Uva:</li>
+                <ul>
+                  <li>Tannat</li>
+                </ul>
+                <li>Região:</li>
+                <ul>
+                  <li>serra Gaúcha</li>
+                </ul>
+                <li>Safra:</li>
+                <ul>
+                  <li>2021</li>
+                </ul>
+                <li>Graduação Alcoólica:</li>
+                <ul>
+                  <li>13%</li>
+                </ul>
+                <li>Preço</li>
+                <ul>
+                  <li>R$ 65,00</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel1">Nome do Vinho:</li>
-          <ul>
-            <li class="nivel2">Dez a Zero</li>
-          </ul>
-          <li class="nivel1">Uva:</li>
-          <ul>
-            <li class="nivel2">Cabernet Sauvingnon</li>
-          </ul>
-          <li class="nivel1">Região:</li>
-          <ul>
-            <li class="nivel2">serra Gaúcha</li>
-          </ul>
-          <li class="nivel1">Safra:</li>
-          <ul>
-            <li class="nivel2">2020</li>
-          </ul>
-          <li class="nivel1">Graduação Alcoólica:</li>
-          <ul>
-            <li class="nivel2">12,5%</li>
-          </ul>
-          <li class="nivel1">Preço</li>
-          <ul>
-            <li class="nivel2">R$ 55,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img01"></div>
-      </section>
+          <div is="v40" class="item ">
+            <img src="imagem/vinho-40anos.jpg" alt="vinho 40 anos " />
+            <div class="descricao-v">
+              <p>vinho 40 Anos,Uva Pinot Noir, Safra 2022</p>
+              <span>R$ 80,00</span>
+            </div>
+            <div class="descricao-i">
+              <img src="imagem/garrafa-de-vinho.png" alt="/garrafa de vinho">
+              <ul>
+                <li>Nome do Vinho:</li>
+                <ul>
+                  <li>40Anos Libertadores</li>
+                </ul>
+                <li>Uva:</li>
+                <ul>
+                  <li>Pinot Noir</li>
+                </ul>
+                <li>Região:</li>
+                <ul>
+                  <li>serra Gaúcha</li>
+                </ul>
+                <li>Safra:</li>
+                <ul>
+                  <li>2022</li>
+                </ul>
+                <li>Graduação Alcoólica:</li>
+                <ul>
+                  <li>11,5%</li>
+                </ul>
+                <li>Preço</li>
+                <ul>
+                  <li>R$ 80,00</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel1">Nome do Vinho:</li>
-          <ul>
-            <li class="nivel2">Tri Invicto</li>
-          </ul>
-          <li class="nivel1">Uva:</li>
-          <ul>
-            <li class="nivel2">Tannat</li>
-          </ul>
-          <li class="nivel1">Região:</li>
-          <ul>
-            <li class="nivel2">Campanha Gaúcha</li>
-          </ul>
-          <li class="nivel1">Safra:</li>
-          <ul>
-            <li class="nivel2">2021</li>
-          </ul>
-          <li class="nivel1">Graduação Alcoólica:</li>
-          <ul>
-            <li class="nivel2">12%</li>
-          </ul>
-          <li class="nivel1">Preço</li>
-          <ul>
-            <li class="nivel2">R$ 55,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img02"></div>
-      </section>
+          <div id="v120" class="item ">
+            <img src="imagem/vinho-120anos.jpg" alt="vinho 120 anos " />
+            <div class="descricao-v">
+              <p>vinho 120 AÑOS, Uva Cabernet Sauvignon, Safra 2022</p>
+              <span>R$ 80,00</span>
+            </div>
+            <div class="descricao-i">
+              <img src="imagem/garrafa-de-vinho.png" alt="/garrafa de vinho">
+              <ul>
+                <li>Nome do Vinho:</li>
+                <ul>
+                  <li>120 Anos</li>
+                </ul>
+                <li>Uva:</li>
+                <ul>
+                  <li>Cabernet Sauvignon</li>
+                </ul>
+                <li>Região:</li>
+                <ul>
+                  <li>serra Gaúcha</li>
+                </ul>
+                <li>Safra:</li>
+                <ul>
+                  <li>2022</li>
+                </ul>
+                <li>Graduação Alcoólica:</li>
+                <ul>
+                  <li>13%</li>
+                </ul>
+                <li>Preço:</li>
+                <ul>
+                  <li>R$ 80,00</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel1">Nome do Vinho:</li>
-          <ul>
-            <li class="nivel2">Olimpico Monumental</li>
-          </ul>
-          <li class="nivel1">Uva:</li>
-          <ul>
-            <li class="nivel2">Tannat</li>
-          </ul>
-          <li class="nivel1">Região:</li>
-          <ul>
-            <li class="nivel2">serra Gaúcha</li>
-          </ul>
-          <li class="nivel1">Safra:</li>
-          <ul>
-            <li class="nivel2">2021</li>
-          </ul>
-          <li class="nivel1">Graduação Alcoólica:</li>
-          <ul>
-            <li class="nivel2">13%</li>
-          </ul>
-          <li class="nivel1">Preço</li>
-          <ul>
-            <li class="nivel2">R$ 55,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img03"></div>
-      </section>
+          <div id="brut" class="item ">
+            <img
+              src="imagem/vinho-but.jpg"
+              alt="vinho Espumantebe Brut "
+            />
+            <div class="descricao-v">
+              <p>vinho Espumantebe Brut, Uva Chardonnay e Pinot Noir</p>
+              <span>R$ 50,00</span>
+            </div>
+            <div class="descricao-i">
+              <img src="imagem/garrafa-de-vinho.png" alt="/garrafa de vinho">
+              <ul>
+                <li>Nome do Vinho:</li>
+                <ul>
+                  <li>Espumantebe Brut</li>
+                </ul>
+                <li>Uva:</li>
+                <ul>
+                  <li>Chardonnay e Pinot Noir</li>
+                </ul>
+                <li>Região:</li>
+                <ul>
+                  <li>serra Gaúcha</li>
+                </ul>
+                <li>Graduação Alcoólica:</li>
+                <ul>
+                  <li>12,5%</li>
+                </ul>
+                <li>Preço</li>
+                <ul>
+                  <li>R$ 50,00</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel1">Nome do Vinho:</li>
-          <ul>
-            <li class="nivel2">1903</li>
-          </ul>
-          <li class="nivel1">Uva:</li>
-          <ul>
-            <li class="nivel2">Meriot</li>
-          </ul>
-          <li class="nivel1">Região:</li>
-          <ul>
-            <li class="nivel2">Campanha Gaúcha</li>
-          </ul>
-          <li class="nivel1">Safra:</li>
-          <ul>
-            <li class="nivel2">2020</li>
-          </ul>
-          <li class="nivel1">Graduação Alcoólica:</li>
-          <ul>
-            <li class="nivel2">12,5%</li>
-          </ul>
-          <li class="nivel1">Preço</li>
-          <ul>
-            <li class="nivel2">R$ 55,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img04"></div>
-      </section>
+          <div id="olimpico" class="item ">
+            <img
+              src="imagem/vinho-olimpico.jpg"
+              alt="vinho Olimpico Monumental "
+            />
+            <div class="descricao-v">
+              <p>vinho Olimpico Monumental, Uva Tannat, Safra 2021</p>
+              <span>R$ 55,00</span>
+            </div>
+            <div class="descricao-i">
+              <img src="imagem/garrafa-de-vinho.png" alt="/garrafa de vinho">
+              <ul>
+                <li>Nome do Vinho:</li>
+                <ul>
+                  <li>Olimpico Monumental</li>
+                </ul>
+                <li>Uva:</li>
+                <ul>
+                  <li>Tannat</li>
+                </ul>
+                <li>Região:</li>
+                <ul>
+                  <li>serra Gaúcha</li>
+                </ul>
+                <li>Safra:</li>
+                <ul>
+                  <li>2021</li>
+                </ul>
+                <li>Graduação Alcoólica:</li>
+                <ul>
+                  <li>13%</li>
+                </ul>
+                <li>Preço</li>
+                <ul>
+                  <li>R$ 55,00</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel1">Nome do Vinho:</li>
-          <ul>
-            <li class="nivel2">40Anos Libertadores</li>
-          </ul>
-          <li class="nivel1">Uva:</li>
-          <ul>
-            <li class="nivel2">Pinot Noir</li>
-          </ul>
-          <li class="nivel1">Região:</li>
-          <ul>
-            <li class="nivel2">serra Gaúcha</li>
-          </ul>
-          <li class="nivel1">Safra:</li>
-          <ul>
-            <li class="nivel2">2022</li>
-          </ul>
-          <li class="nivel1">Graduação Alcoólica:</li>
-          <ul>
-            <li class="nivel2">11,5%</li>
-          </ul>
-          <li class="nivel1">Preço</li>
-          <ul>
-            <li class="nivel2">R$ 80,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img05"></div>
-      </section>
+          <div id="tri" class="item ">
+            <img
+              src="imagem/vinho-trei.jpg"
+              alt="vinho Tri Invicto"
+            />
+            <div class="descricao-v">
+              <p>vinho Tri Invicto, Uva Tannat, Safra 2021</p>
+              <span>R$ 55,00</span>
+            </div>
+            <div class="descricao-i">
+              <img src="imagem/garrafa-de-vinho.png" alt="/garrafa de vinho">
+              <ul>
+                <li>Nome do Vinho:</li>
+                <ul>
+                  <li>Tri Invicto</li>
+                </ul>
+                <li>Uva:</li>
+                <ul>
+                  <li>Tannat</li>
+                </ul>
+                <li>Região:</li>
+                <ul>
+                  <li>Campanha Gaúcha</li>
+                </ul>
+                <li>Safra:</li>
+                <ul>
+                  <li>2021</li>
+                </ul>
+                <li>Graduação Alcoólica:</li>
+                <ul>
+                  <li>12%</li>
+                </ul>
+                <li>Preço</li>
+                <ul>
+                  <li>R$ 55,00</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel1">Nome do Vinho:</li>
-          <ul>
-            <li class="nivel2">Suarez</li>
-          </ul>
-          <li class="nivel1">Uva:</li>
-          <ul>
-            <li class="nivel2">Tannat</li>
-          </ul>
-          <li class="nivel1">Região:</li>
-          <ul>
-            <li class="nivel2">serra Gaúcha</li>
-          </ul>
-          <li class="nivel1">Safra:</li>
-          <ul>
-            <li class="nivel2">2021</li>
-          </ul>
-          <li class="nivel1">Graduação Alcoólica:</li>
-          <ul>
-            <li class="nivel2">13%</li>
-          </ul>
-          <li class="nivel1">Preço</li>
-          <ul>
-            <li class="nivel2">R$ 65,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img06"></div>
-      </section>
+        <article>
+          <div class="cnpj">
+            <span>A-D-E-G-A-D-O-G-R-Ê-M-I-O</span>
+            <p>
+              <span>PRODUTOS</span> <br />
+              Estes são os valores para CNPJ.Qualquer duvida estarei a
+              disposição. Aguardo seu retorno para podermos fechar o pedido.
+              Atenciosamente Jamile Mascarello - Vendas.
+            </p>
+          </div>
+          <img src="imagem/vinho.png" alt="vinho" />
+        </article>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel1">Nome do Vinho:</li>
-          <ul>
-            <li>120 Anos</li>
-          </ul>
-          <li class="nivel1">Uva:</li>
-          <ul>
-            <li class="nivel2">Cabernet Sauvignon</li>
-          </ul>
-          <li class="nivel1">Região:</li>
-          <ul>
-            <li class="nivel2">serra Gaúcha</li>
-          </ul>
-          <li>Safra:</li>
-          <ul>
-            <li class="nivel2">2022</li>
-          </ul>
-          <li class="nivel1">Graduação Alcoólica:</li>
-          <ul>
-            <li class="nivel2">13%</li>
-          </ul>
-          <li class="lista">Preço:</li>
-          <ul>
-            <li class="nivel2">R$ 80,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img07"></div>
-      </section>
+        <section class="produtos">
+          <div id="v1903" class="item">
+            <img src="imagem/vinho-1903.jpg" alt="vinho 1903 " />
+            <div class="descricao-v">
+              <p>vinho 1903, Uva Meriot, Safra 2020</p>
+              <span>R$ 55,00</span>
+            </div>
+            <div class="descricao-i">
+              <img src="imagem/garrafa-de-vinho.png" alt="/garrafa de vinho">
+              <ul>
+                <li>Nome do Vinho:</li>
+                <ul>
+                  <li>1903</li>
+                </ul>
+                <li>Uva:</li>
+                <ul>
+                  <li>Meriot</li>
+                </ul>
+                <li>Região:</li>
+                <ul>
+                  <li>Campanha Gaúcha</li>
+                </ul>
+                <li>Safra:</li>
+                <ul>
+                  <li>2020</li>
+                </ul>
+                <li>Graduação Alcoólica:</li>
+                <ul>
+                  <li>12,5%</li>
+                </ul>
+                <li>Preço</li>
+                <ul>
+                  <li>R$ 55,00</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel2">Taça Brut</li>
-          <li class="lista">Preço:</li>
-          <ul>
-            <li class="nivel2">R$ 35,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img09"></div>
-      </section>
+          <div is="dez" class="item ">
+            <img src="imagem/vinho-dez.jpg" alt="vinho Dez a Zero" />
+            <div class="descricao-v">
+              <p>vinho Dez a Zero, Uva Cabernet Sauvingnon, Safra 2020</p>
+              <span>R$ 55,00</span>
+            </div>
+            <div class="descricao-i">
+               <img src="imagem/garrafa-de-vinho.png" alt="/garrafa de vinho">
+              <ul>
+                <li>Nome do Vinho:</li>
+                <ul>
+                  <li>Dez a Zero</li>
+                </ul>
+                <li>Uva:</li>
+                <ul>
+                  <li>Cabernet Sauvingnon</li>
+                </ul>
+                <li>Região:</li>
+                <ul>
+                  <li>serra Gaúcha</li>
+                </ul>
+                <li>Safra:</li>
+                <ul>
+                  <li>2020</li>
+                </ul>
+                <li>Graduação Alcoólica:</li>
+                <ul>
+                  <li>12,5%</li>
+                </ul>
+                <li>Preço</li>
+                <ul>
+                  <li>R$ 55,00</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
 
-      <section>
-        <ul class="lista">
-          <li class="nivel2">Taça Vinho</li>
-          <li class="lista">Preço:</li>
-          <ul>
-            <li class="nivel2">R$ 36,00</li>
-          </ul>
-        </ul>
-        <div class="vinhos background" id="img10"></div>
-      </section>
-    </main>
-    <footer>
-      <p>
-        Estes são os valores para CNPJ.Qualquer duvida estarei a disposição .
-        Aguardo seu retorno para podermos fechar o pedido. Atenciosamente Jamile
-        Mascarello - Vendas.
-      </p>
-    </footer>
+          <div id="tBrut" class="item-1">
+            <img src="imagem/taca-brut.jpg" alt="vinho 120 anos " />
+            <div class="descricao-v">
+              <p>Taça Brut</p>
+              <span>R$ 35.00</span>
+            </div>
+          </div>
+
+          <div id="tvinho" class="item-1">
+            <img
+              src="imagem/taca-vinho.jpg"
+              alt="vinho Tri Invicto"
+            />
+            <div class="descricao-v">
+              <p>Taça Vinho</p>
+              <span>R$ 36.00</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div id="sobre" class="footer-item ">
+          <h3>Adega do Grêmio: Celebrando a Tradição em Cada Gole</h3>
+          <p>
+            Bem-vindo à Adega do Grêmio, um destino único para os verdadeiros
+            amantes do vinho e apaixonados pelo futebol. Em nossa adega, unimos
+            a rica tradição do Grêmio Foot-Ball Porto Alegrense à arte refinada
+            da produção vinícola, oferecendo uma experiência exclusiva para os
+            paladares mais exigentes.
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Orçamento Exclusivo para CNPJ</h3>
+          <p>
+            Os valores apresentados são exclusivos para CNPJ. Detalhes do
+            orçamento:
+          </p>
+
+          <p>
+            Estamos à disposição para esclarecer dúvidas e fornecer informações
+            adicionais. Essas condições aplicam-se apenas a transações com CNPJ.
+          </p>
+
+          <p>
+            Aguardamos seu retorno para finalizarmos o processo. <br />
+            Atenciosamente, <br />
+
+            Jamile Mascarello <br />
+            Vendas - Adega do Grêmio
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Redes Sociais</h3>
+          <a href="https://wa.me/5554981040529?text=Ola%21"><img src="imagem/whatsapp-1.png" alt=""></a>
+          <a href="https://instagram.com/adegadogremio?igshid=Yjc0OGI0MDc4OA=="><img src="imagem/instagram (1).png" alt=""></a>
+        </div>
+      </footer>
+    </div>
+    <a class="whatsapp" href="https://wa.me/5554981040529?text=Ola%21"><img width="40px" src="imagem/whatsapp.png" alt="whatsapp" /></a>
   </body>
 </html>

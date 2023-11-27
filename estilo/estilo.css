@@ -1,171 +1,66 @@
 @charset "UTF-8";
-
-/* font da letra principal */
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-
-:root {
-  --font-01: "Pacífico", sans-serif;
-  --font-02: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
-  --cor-01: black;
-  --cor-02: whitesmoke;
-  --cor-03: rgb(13, 128, 191);
-  --cor-04: #f8c300;
-  --cor-05: #93754f;
+@media screen and (max-width: 993px){
+  .navbar {
+    overflow: auto;
+  }
 }
-/* configuraçoes globais  */
-* {
-  padding: 0px;
-  margin: 0px;
-  font-family: "Courgette", cursive;
-}
-/* body coloque degrade  */
-body {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(13, 128, 191),
-    rgb(9, 85, 126)
-  );
-}
-/* cabesalho colquei a imagem */
-header {
-  margin: auto;
-  background-color: var(--cor-01);
-  padding: 20px;
-}
-/* a logo da adega do grêmio  */
-header img {
-  display: block;
-  margin: auto;
-  width: 50%;
-  height: auto;
-}
-/* navigação  */
-nav {
-  background-color: var(--cor-01);
-  padding: 20px;
-  text-align: center;
-  margin: 0px 0px -10px 0px;
-  box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.811);
-}
-nav a {
-  color: var(--cor-02);
-  text-decoration: none;
-  font-family: var(--font-02);
-}
-nav a:hover {
-  color: rgb(195, 192, 192);
-}
-/* imagem do instagram  */
-nav img {
-  width: 15px;
-}
-/* conteudo principal 
-coloquei a imagem branca da adega do grêmio */
-main {
-  max-width: 700px;
-  margin: auto;
-  border-radius: 0px 7px;
-  background-color: white;
-  background-image: url(../imagem/ADEGADOGREMIOBRANCA.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-}
-/* seçoes de cada produto  */
-section {
-  height: 370px;
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid black;
-}
-div {
-  position: relative;
-  margin: auto;
-  width: 300px;
-  height: 90%;
+@media screen and (min-width: 765px) {
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+  }
+  menu {
+    text-align: right;
+    
+  }
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 10px 5%;
+  }
 }
 
-div.vinhos {
-  width: 300px;
-  height: 350px;
-  position: relative;
-}
-.background {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-div#img01 {
-  background: url(../ImagemV/DEZA0-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-div#img02 {
-  background-image: url(../ImagemV/TRI-removebg-preview.png);
-}
-div#img03 {
-  background-image: url(../ImagemV/OLIMPICO-removebg-preview.png);
-}
-div#img04 {
-  background-image: url(../ImagemV/1903ANOSn-removebg-preview.png);
-}
-div#img05 {
-  background-image: url(../ImagemV/40ANOSn-removebg-preview.png);
-}
-div#img06 {
-  background-image: url(../ImagemV/SUAREZ-removebg-preview.png);
-}
-div#img07 {
-  background-image: url(../ImagemV/120ANOS-removebg-preview.png);
-}
-div#img08 {
-  background-image: url(../ImagemV/But-removebg-preview.png);
-}
-div#img09 {
-  background-image: url(../ImagemV/TACABRUT.png);
-}
-div#img10 {
-  background-image: url(../ImagemV/TAÇAVINHO.png);
-}
-/* listas  */
-li {
-  border: 1px solid black;
-  width: 150px;
-}
-ul {
-  list-style: none;
-  line-height: 1.5em;
-}
-ul.lista {
-  position: absolute;
-  left: 1;
-  width: 200px;
-  list-style-type: none;
-  padding: 0px;
-}
-li.nivel1 {
-  color: #93754f;
-  font-weight: 100;
-  font-size: 0.9em;
-}
-li.nivel2 {
-  color: black;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-.vinhos img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media screen and (min-width: 993px) {
+  .estrutura {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-areas: 
+    "header header"
+    "navbar produtos"
+    "footer footer";
+  }
+  .navbar {
+    border: none;
+    position: relative;
+    background-color: whitesmoke;
+  }
+  .navbar img {
+    display: block;
+    margin: 10px auto;
+  }
+  .navbar ul {
+    white-space: wrap;
+    position: sticky;
+    top: 0;
+  }
+  .navbar li {
+    display: block;
+  }
+  .navbar li + li {
+    margin: 0;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-footer {
-  margin-top: -10px;
-  text-align: justify;
-  background-color: whitesmoke;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 10px;
-}
+
+
+
